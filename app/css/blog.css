@@ -3,15 +3,20 @@
 }
 
 :root {
-    --main-black:
+    --main-black:#FCFCFC;
 }
 
-body {
+body,html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
+#main{
+    display: flex;
+    height: 100%;
+}
 .clear-fix {
     clear: both;
 }
@@ -34,7 +39,7 @@ body {
     float: left;
     height: 100%;
     padding-top: 30px;
-    position: fixed;
+    /*position: absolute;*/
     text-align: center;
     width: 25%;
 }
@@ -138,6 +143,56 @@ ul li a.active-link {
 .article-text {
     padding: 0 75px;
     text-align: justify;
+}
+
+
+.contact-section{
+    padding-left: 50px;
+}
+
+.subscription .info span{
+    display: block;
+}
+
+
+.subscription .info{
+    margin-bottom: 20px;
+}
+
+.subscription .info .header{
+    font-family: Raleway,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+.subscription .info .info-text{
+    font-family: Raleway,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    color: #999999;
+
+}
+.subscription .form textarea{
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    resize: none;
+}
+
+.subscription .form button{
+    background: #FFFFFF;
+    border: 1px solid #086963;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: #086963;
 }
 
 .manage-feed-header {
@@ -263,6 +318,9 @@ hr {
 hr{
     width: 80%;
 }
+
+
+=======
 /**
 Manage-Feed CSS
 **/
@@ -423,3 +481,4 @@ img.blogger-avatar{
 .rounded-img{
     border-radius: 50%;
 }
+
