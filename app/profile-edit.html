@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile Edit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/profile-edit.css" />
+    <!-- Add jquery CDN for Uploading Picture -->
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+    <script src="js/picture-upload.js"></script>
+</head>
+
+<body>
+    <section class="user-section">
+        <div class="user-image">
+            <img src="img/avatar.png" alt="avatar" />
+        </div>
+        <div class="user-info">
+            <h2>Saviour Essien</h2>
+            <p>Designer - UI/UX & Brand Identity</p>
+            <p>Always happy</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-medium"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active-link">Timeline</a></li>
+                <li><a href="#">My Articles</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="news-feed">
+        <div class="edit-profile-header"><a href="#">Edit Profile</a> <br> <br>
+            <input type='file' onchange="readURL(this);" />
+            <img style="float:right;" id="blah" src="#" alt="your image" />
+        </div> <br>
+
+        <form action="">
+         <label  for="firstname">First Name</label> <br>
+         <input class="input-text" name="firstname" id=""> <br>
+
+         <label for="lastname">Last Name</label> <br>
+         <input class="input-text" name="lastname" id=""> 
+              <br>
+              <br>
+              <br>
+            
+              <hr style="float: left;"> <br>
+         <label for="about me">About You</label> <br>
+         <br>
+         <input class="about-me" name="about me" id="" placeholder="Your text here" >
+         <br>
+        </form>
+        <br>
+        
+        <input type="button" value="Save" onclick="">
+        <br>
+        <br>
+        <br>
+        <div class="edit-profile-header"><a href="#">Account Settings</a></div> 
+        
+
+        <h5 style="color:#000000;">Theme</h5>
+        <form>
+                <input type="radio" name="soft-theme" value="male" checked >Soft Theme<br>
+                 <input type="radio" name="Dark-theme" value="female">Dark Theme<br>
+
+                 <br>
+                 <h5 style="color:#000000;">Night Mode</h5>
+                 <label class="switch" >
+                        <input type="checkbox" > 
+                        <span class="slider round"></span> 
+                        </label>
+          </form>
+                 <br>
+          <div class="edit-profile-header"><a href="#">Manage Feed</a></div>
+          <h5 style="color:#999999;">Manage blogs you follow and discover new ones</h5> 
+        
+       
+    </section>
+</body>
+
+</html>
+
